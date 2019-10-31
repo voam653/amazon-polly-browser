@@ -43,10 +43,8 @@
     <script src="https://sdk.amazonaws.com/js/aws-sdk-2.410.0.min.js"></script>
     <script type="text/javascript">
       // Initialize the Amazon Cognito credentials provider
-      AWS.config.region = 'us-east-1'; // Região
-      AWS.config.credentials = new AWS.CognitoIdentityCredentials({
-        IdentityPoolId: 'us-east-1:7083df6a-e9eb-4e1f-ba63-e4372b4fbd75'
-      });
+      AWS.config.region = 'REGION'; 
+      AWS.config.credentials = new AWS.CognitoIdentityCredentials({IdentityPoolId: 'IDENTITY_POOL_ID'});
 
       // Function invoked by button click
       function speakText(event) {
